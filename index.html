@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bonus Challenge</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css"></head>
+
+<body>
+
+	<section class="small-navbar">
+		<div class="container-fluid small-nav">
+			<div class="row">
+				<div class="col-xs-3 hidden-sm hidden-md hidden-lg">
+					<a href="#"> <i class="fas fa-phone contact-icon"></i>
+					</a>
+					<a href="#"> <i class="fas fa-envelope contact-icon"></i>
+					</a>
+				</div>
+				<div class="col-xs-3 col-xs-offset-1 hidden-sm hidden-md hidden-lg">
+					<div class="login">
+						<a href="#" data-toggle="modal" data-target="#login-modal" class="login-btn">
+							<i class="fas fa-sign-in-alt login-icon"></i>
+						</a>
+						<a href="#" class="signup-btn">
+							<i class="fa fa-user login-icon"></i>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-5  hidden-sm hidden-md hidden-lg text-right">
+					<a href="#">
+						<i class="fab fa-facebook-f soc-icon"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-google-plus soc-icon"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-twitter soc-icon"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-envelope soc-icon"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="row ">
+				<div class="col-md-6 col-sm-6 hidden-xs white-text">
+					<p>Contact us on +420 777 555 333 or hello@universal.com.</p>
+				</div>
+				<div class="col-md-6 col-sm-6 hidden-xs">
+					<ul class="list-inline text-right">
+						<li>
+							<a href="#" data-toggle="modal" data-target="#login-modal" class="login-btn">
+								<i class="fas fa-sign-in-alt login-icon"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" data-toggle="modal" data-target="#login-modal" class="login-btn">SIGN IN</a>
+						</li>
+						<li >
+							<a href="customer-register.html" class="signup-btn">
+								<i class="fa fa-user login-icon"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="signup-btn">SIGN UP</a>
+						</li>
+						<li >
+							<a href="#">
+								<i class="fab fa-facebook soc-icon"></i>
+							</a>
+						</li>
+						<li >
+							<a href="#">
+								<i class="fab fa-google-plus soc-icon"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fab fa-twitter soc-icon"></i>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-envelope soc-icon"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 	=====================LOGIN MODAL===================== -->
+
+<div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true" class="modal fade">
+	<div role="document" class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 id="login-modalLabel" class="modal-title uppercase pull-left">Customer Login</h4>
+				<button type="button" data-dismiss="modal" aria-label="Close" class="close pull-right">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="customer-orders.html" method="get">
+					<div class="form-group">
+						<input id="email_modal" type="text" placeholder="email" class="form-control form-teal"></div>
+					<div class="form-group">
+						<input id="password_modal" type="password" placeholder="password" class="form-control form-teal"></div>
+					<p class="text-center">
+						<button class="btn btn-modal">
+							<i class="fas fa-sign-in-alt"></i>
+							Log in
+						</button>
+					</p>
+				</form>
+				<p class="text-center">Not registered yet?</p>
+				<p class="text-center">
+					<a class="color-teal" href="#"> <strong>Register now</strong>
+					</a>
+					! It is easy and done in 1 minute and gives you access to special discounts and much more!
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ==================LOGIN MODAL END================= -->
+
+<section class="large-navbar">
+	<nav class="navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar bg-teal"></span>
+					<span class="icon-bar bg-teal"></span>
+					<span class="icon-bar bg-teal"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.png" class="img-responsive"/>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="#home">
+							Home
+							<span class="caret"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#features">
+							Features
+							<span class="caret"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#portfolio">
+							Portfolio
+							<span class="caret"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#all-pages">
+							All pages
+							<span class="caret"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#contact">
+							Contact
+							<span class="caret"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section id="home">
+	<div class="container-fluid uppercase bg-image">
+		<div class="row bg-teal">
+			<div id="myCarousel" class="carousel slide " data-ride="carousel">
+
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+				</ol>
+
+				<div class="carousel-inner white-text uppercase cover">
+					<div class="item active ">
+						<div class="row row-item">
+							<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+								<img src="img/logo.png">
+								<h1>Multipurpose responsive theme</h1>
+								<p>
+									Business. Corporate. Agency.
+									<br>Portfolio. Blog. E-commerce.</p>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<img class="cover-img" src="img/template-easy-customize.png" width="100%"></div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="row row-item">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<img class="cover-img" src="img/template-mac.png" width="100%"></div>
+							<div class="col-md-6 col-sm-6 col-xs-12 text-left">
+								<h1>46 HTML pages full of features</h1>
+								<ul class="list-unstyled">
+									<li>Sliders and carousels</li>
+									<li>4 Header variations</li>
+									<li>Google maps, Forms, Megamenu, CSS3 Animations and much more</li>
+									<li>+ 11 extra pages showing template features</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="row row-item">
+							<div class="col-md-6 col-sm-6 col-xs-12 text-right">
+								<h1>Design</h1>
+								<ul class="list-unstyled">
+									<li>Clean and elegant design</li>
+									<li>Full width and boxed mode</li>
+									<li>Easily readable Roboto font and awesome icons</li>
+									<li>7 preprepared colour variations</li>
+								</ul>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<img class="cover-img" src="img/template-homepage.png" width="100%"></div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="row row-item">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<img class="cover-img" src="img/template-easy-code.png" width="100%"></div>
+							<div class="col-md-6 col-sm-6 col-xs-12 text-left">
+								<h1>Easy to customize</h1>
+								<ul class="list-unstyled">
+									<li>7 preprepared colour variations.</li>
+									<li>Easily to change fonts</li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="features" id="features">
+	<div class="container text-center">
+		<diw class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<span class="glyphicon glyphicon-envelope icon"></span>
+				<h3 class="uppercase">WEB Design</h3>
+				<p>
+					Erant interpretaris ut mea, causae inimicus expetenda an eam. Adipiscing elit erant.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<span class="glyphicon glyphicon-print icon"></span>
+				<h3 class="uppercase">Print</h3>
+				<p>
+					Erant interpretaris ut mea, causae inimicus expetenda an eam. Adipiscing elit erant. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<span class="glyphicon glyphicon-globe icon"></span>
+				<h3 class="uppercase">SEO and SEM</h3>
+				<p>
+					Erant interpretaris ut mea, causae inimicus expetenda an eam. Adipiscing elit erant. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+		</diw>
+		<diw class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<i class="far fa-lightbulb icon"></i>
+				<h3 class="uppercase">Consulting</h3>
+				<p>
+					Erant interpretaris ut mea, causae inimicus expetenda an eam. Adipiscing elit erant. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<span class="glyphicon glyphicon-envelope icon"></span>
+				<h3 class="uppercase">E-mail marketing</h3>
+				<p>
+					Erant interpretaris ut mea, causae inimicus expetenda an eam. Adipiscing elit erant. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<span class="glyphicon glyphicon-user icon"></span>
+				<h3 class="uppercase">UX</h3>
+				<p>
+					Erant interpretaris ut mea, causae inimicus expetenda an eam. Adipiscing elit erant. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+		</diw>
+	</div>
+</section>
+
+<section class="text-center bg-honey padding" id="portfolio">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h2 class="uppercase">Testimonials</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 col-md-offset-5">
+				<hr class="teal-line"></div>
+		</div>
+		<div class="row margin-side">
+			<div class="col-md-12">
+				<h3>
+					We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us.
+				</h3>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div id="myCarousel2" class="carousel slide " data-ride="carouse">
+
+					<ol class="carousel-indicators custom-ind">
+						<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel2" data-slide-to="1"></li>
+					</ol>
+
+					<div class="carousel-inner white-text uppercase cover row-carousel">
+						<div class="item active ">
+
+							<div class="col-md-3 col-xs-12">
+								<div class="card">
+									<div class="text">
+										<p>
+											One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
+										</p>
+									</div>
+									<div class="bottom">
+										<div class="icont">
+											<i class="fa fa-quote-left"></i>
+										</div>
+										<div class="title">
+											<h5>John McIntyre</h5>
+											<p>CEO, TransTech</p>
+										</div>
+										<div class="avatar">
+											<img alt="" src="img/person-1.jpg" class="img-responsive"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-xs-12">
+								<div class="card">
+									<div class="text">
+										<p>
+											The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream.
+										</p>
+									</div>
+									<div class="bottom">
+										<div class="icont">
+											<i class="fa fa-quote-left"></i>
+										</div>
+										<div class="title">
+											<h5>John McIntyre</h5>
+											<p>CEO, TransTech</p>
+										</div>
+										<div class="avatar">
+											<img alt="" src="img/person-2.jpg" class="img-responsive"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-xs-12">
+								<div class="card">
+									<div class="text">
+										<p>
+											His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+										</p>
+										<p>
+											A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+										</p>
+									</div>
+									<div class="bottom">
+										<div class="icont">
+											<i class="fa fa-quote-left"></i>
+										</div>
+										<div class="title">
+											<h5>John McIntyre</h5>
+											<p>CEO, TransTech</p>
+										</div>
+										<div class="avatar">
+											<img alt="" src="img/person-3.png" class="img-responsive"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-xs-12">
+								<div class="card">
+									<div class="text">
+										<p>
+											It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.
+										</p>
+									</div>
+									<div class="bottom">
+										<div class="icont">
+											<i class="fa fa-quote-left"></i>
+										</div>
+										<div class="title">
+											<h5>John McIntyre</h5>
+											<p>CEO, TransTech</p>
+										</div>
+										<div class="avatar">
+											<img alt="" src="img/person-4.jpg" class="img-responsive"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="col-md-3">
+								<div class="card">
+									<div class="text">
+										<p>
+											The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream.
+										</p>
+									</div>
+									<div class="bottom">
+										<div class="icont">
+											<i class="fa fa-quote-left"></i>
+										</div>
+										<div class="title">
+											<h5>John McIntyre</h5>
+											<p>CEO, TransTech</p>
+										</div>
+										<div class="avatar">
+											<img alt="" src="img/person-2.jpg" class="img-responsive"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="card">
+									<div class="text">
+										<p>
+											His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+										</p>
+										<p>
+											A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+										</p>
+									</div>
+									<div class="bottom">
+										<div class="icont">
+											<i class="fa fa-quote-left"></i>
+										</div>
+										<div class="title">
+											<h5>John McIntyre</h5>
+											<p>CEO, TransTech</p>
+										</div>
+										<div class="avatar">
+											<img alt="" src="img/person-3.png" class="img-responsive"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+								<div class="card">
+									<div class="text">
+										<p>
+											It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.
+										</p>
+									</div>
+									<div class="bottom">
+										<div class="icont">
+											<i class="fa fa-quote-left"></i>
+										</div>
+										<div class="title">
+											<h5>John McIntyre</h5>
+											<p>CEO, TransTech</p>
+										</div>
+										<div class="avatar">
+											<img alt="" src="img/person-4.jpg" class="img-responsive"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+
+								<div class="card">
+									<div class="text">
+										<p>
+											 Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.
+										</p>
+									</div>
+									<div class="bottom">
+										<div class="icont">
+											<i class="fa fa-quote-left"></i>
+										</div>
+										<div class="title">
+											<h5>John McIntyre</h5>
+											<p>CEO, TransTech</p>
+										</div>
+										<div class="avatar">
+											<img alt="" src="img/person-1.jpg" class="img-responsive"></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="see-more">
+<div class="container-fluid text-center white-text bg-see-more">
+	<div class="row">
+		<div class="col-md-12">
+			<span class="glyphicon glyphicon-file icon-w"></span>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<h2 class="uppercase">do you want to see more?</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<p>
+				We have prepared for you more than 40 different HTML pages, including 5 variations of homepage.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<form>
+				<button class="btn-transp uppercase">See another homepage</button>
+			</form>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="partners">
+<div class="container-fluid text-center clients-div">
+	<div class="row">
+		<div class="col-md-12">
+			<h2 class="uppercase">our clients</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2 col-md-offset-5">
+			<hr class="teal-line"></div>
+	</div>
+	<div class="row margin-side clients">
+		<div class="col-md-2">
+			<a href="#">
+				<img src="img/customer-1.png"></a>
+		</div>
+		<div class="col-md-2">
+			<a href="#">
+				<img src="img/customer-2.png"></a>
+		</div>
+		<div class="col-md-2">
+			<a href="#">
+				<img src="img/customer-3.png"></a>
+		</div>
+		<div class="col-md-2">
+			<a href="#">
+				<img src="img/customer-4.png"></a>
+		</div>
+		<div class="col-md-2">
+			<a href="#">
+				<img src="img/customer-5.png"></a>
+		</div>
+		<div class="col-md-2">
+			<a href="#">
+				<img src="img/customer-6.png"></a>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="large-footer">
+<div class="container-fluid custom-footer">
+	<div class="row margin-side">
+		<div class="col-md-3">
+			<h5 class="uppercase">about us</h5>
+			<p class="muted">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+			</p>
+			<hr class="hr-white">
+			<h5 class="uppercase">join our monthly newsletter</h5>
+			<form>
+				<div class="input-group">
+					<input type="email" name="email" class="form-control form-teal ">
+					<div class="input-group-btn">
+						<button type="button" class="btn btn-default btn-form">
+							<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-md-3">
+			<h5 class="uppercase">blog</h5>
+			<div class="media">
+				<div class="media-left media-middle">
+					<a href="#">
+						<img class="media-object" src="img/detailsquare.jpg" alt="..." width="50px" height="50px"></a>
+				</div>
+				<div class="media-body">
+					<h5 class="uppercase">
+						<a class="link-white">blog post name</a>
+					</h5>
+				</div>
+			</div>
+			<div class="media">
+				<div class="media-left media-middle">
+					<a href="#">
+						<img class="media-object" src="img/detailsquare.jpg" alt="..." width="50px" height="50px"></a>
+				</div>
+				<div class="media-body">
+					<h5 class="uppercase">
+						<a class="link-white">blog post name</a>
+					</h5>
+				</div>
+			</div>
+			<div class="media">
+				<div class="media-left media-middle">
+					<a href="#">
+						<img class="media-object" src="img/detailsquare.jpg" alt="..." width="50px" height="50px"></a>
+				</div>
+				<div class="media-body">
+					<h5 class="uppercase">
+						<a class="link-white">very very long blog post name</a>
+					</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<h5 class="uppercase">contact</h5>
+			<p class="muted uppercase">
+				universal ltd.
+				<br>
+				13/25 new avenue
+				<br>
+				newton upon river
+				<br>
+				45y 73j
+				<br>
+				england
+				<br>great britain</p>
+			<form>
+				<button class="btn btn-teal">go to contact page</button>
+			</form>
+
+		</div>
+		<div class="col-md-3">
+			<ul class="list-unstyled list-inline">
+				<h5 class="uppercase">Gallery</h5>
+				<li>
+					<a href="#">
+						<img src="img/detailsquare.jpg" alt="..."></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/detailsquare2.jpg" alt="..."></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/detailsquare3.jpg" alt="..."></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/detailsquare3.jpg" alt="..."></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/detailsquare3.jpg" alt="..."></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/detailsquare3.jpg" alt="..."></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/detailsquare3.jpg" alt="..."></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/detailsquare3.jpg" alt="..."></a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/detailsquare3.jpg" alt="..."></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="small-footer">
+<div class="container-fluid bg-grey">
+	<div class="row white-text padding margin-side">
+		<div class="col-md-4">
+			<p>&copy 2018. Your company / name goes here</p>
+		</div>
+		<div class="col-md-4 col-md-offset-4 pull-right">
+			<p>
+				Template design by
+				<a href="#" class="link-teal">Bootstrapious Templates</a>
+			</p>
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+</body>
+</html>
